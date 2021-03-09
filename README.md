@@ -54,13 +54,7 @@ https://docs.aws.amazon.com/ko_kr/codepipeline/latest/userguide/samples/SampleAp
 ![image](https://user-images.githubusercontent.com/79297534/110430103-3898a900-80ef-11eb-945b-6ccb1a69e4b7.png)
 - Advanced Details에 User data부분에 As text에 체크한후 아래의 글을 붙여넣기 (bucket-name에는 본인의 리전을 넣어야함)
 - 실습에서는 bucket-name에 aws-codedeploy-ap-northeast-2를 기입함
-
-<powershell>  
-New-Item -Path c:\temp -ItemType "directory" -Force
-powershell.exe -Command Read-S3Object -BucketName bucket-name/latest -Key codedeploy-agent.msi -File c:\temp\codedeploy-agent.msi
-Start-Process -Wait -FilePath c:\temp\codedeploy-agent.msi -WindowStyle Hidden
-</powershell>
-
+![image](https://user-images.githubusercontent.com/79297534/110431441-2a4b8c80-80f1-11eb-9dbd-8bb41779b18d.png)
 ![image](https://user-images.githubusercontent.com/79297534/110430504-d55b4680-80ef-11eb-8f09-d2ee26bd3f92.png)
 ![image](https://user-images.githubusercontent.com/79297534/110430683-15bac480-80f0-11eb-8dec-b2a3ef33b726.png)
 
