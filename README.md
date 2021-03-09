@@ -15,7 +15,7 @@
 
 ## AWS Pipeline 구축 실습 (BASE)
 
-### CodeCommit repository 생성 및 복제
+### CodeCommit repository 생성 및 로컬 연결
 - https://console.aws.amazon.com/iam/ 에접속하여 유저 생성 (권한 부여)
 - 생성된 유저 선택후 Security credentials탭에서 HTTPS Git credentials for AWS CodeCommit에 Generate로 자격증명 다운받기 (노출금지)
 - https://console.aws.amazon.com/codecommit/ 에 접속하여 Create bucket 선택
@@ -26,9 +26,11 @@
 - git SSL 인증서 검증 끄기 : git config --global http.sslVerify false
 - 복사한 HTTPS를 git clone 뒤에 붙여서 명령어 실행
 - 실행후 자격증명의 계정 정보 입력
-- 저장소 복제 확인
+- 로컬에 복제 확인
 ![image](https://user-images.githubusercontent.com/79297534/110459637-8f62aa80-8110-11eb-9d8e-e35560862d7c.png)
-
+- 깃 설정 및 커밋 확인
+![image](https://user-images.githubusercontent.com/79297534/110462300-d605d400-8113-11eb-8cb6-942db5ac0517.png)
+![image](https://user-images.githubusercontent.com/79297534/110462368-f33aa280-8113-11eb-860b-5c846629d30d.png)
 
 
 
