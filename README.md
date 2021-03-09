@@ -70,7 +70,7 @@ https://docs.aws.amazon.com/ko_kr/codepipeline/latest/userguide/samples/SampleAp
 ![image](https://user-images.githubusercontent.com/79297534/110435607-8fee4780-80f6-11eb-8587-8c8d907df4e6.png)
 - Service role을 위해 새창으로 https://console.aws.amazon.com/iam/ 에 접속후 우측 탭의 Roles 선택
 - EC2/온프레미스 배포 - CodeDeploy 선택 / Amazon ECS 배포 - CodeDeploy - ECS 선택 / AWS Lambda 배포 Lambda용 CodeDeploy 선택
-- Next: Permissions ->  Nex: Tags -> Next: Review 선택
+- Next: Permissions ->  Nex: Tags -> Next: Review 선택 (실습에서는 CodeDeploy 선택)
 ![image](https://user-images.githubusercontent.com/79297534/110439387-be6e2180-80fa-11eb-9e62-bfa2b5455e7c.png)
 ![image](https://user-images.githubusercontent.com/79297534/110439667-12790600-80fb-11eb-83f9-cc347344a6bb.png)
 - Role name을 CodeDeployServiceRole-3090로 지정해준 후 Create role 선택
@@ -105,8 +105,11 @@ https://docs.aws.amazon.com/ko_kr/codepipeline/latest/userguide/samples/SampleAp
 ![image](https://user-images.githubusercontent.com/79297534/110443469-49511b00-80ff-11eb-985c-24d4b6555619.png)
 ![image](https://user-images.githubusercontent.com/79297534/110443668-84534e80-80ff-11eb-9a51-5dc3a5db164c.png)
 ![image](https://user-images.githubusercontent.com/79297534/110443773-a351e080-80ff-11eb-8cd5-8886eb3338e3.png)
-- 현실습에서는 로드밸런서를 설정할 필요없음
+- 현실습에서는 로드밸런서를 설정할 필요없음 해당 그림들 처럼 수정후  Create deployment group 선택
 
+### CodePipeline 
+- http://console.aws.amazon.com/codesuite/codepipeline/home 에 접속후 파이프라인 생성 선택
+- 
 
 
 ## 참고자료
