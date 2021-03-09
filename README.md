@@ -109,8 +109,14 @@ https://docs.aws.amazon.com/ko_kr/codepipeline/latest/userguide/samples/SampleAp
 
 ### CodePipeline 
 - http://console.aws.amazon.com/codesuite/codepipeline/home 에 접속후 파이프라인 생성 선택
-- 
-
+- 아래 그림과 같이 설정후 다음단계로 이동 (Pipeline name : MyFirstPipeline-0309)
+![image](https://user-images.githubusercontent.com/79297534/110446149-33912500-8102-11eb-9946-627172c6cfae.png)
+- 아래 그림과 같이 설정후 다음단계로 이동
+![image](https://user-images.githubusercontent.com/79297534/110446586-b4e8b780-8102-11eb-9a11-8d653acb8d94.png)
+- Skip build stage 선택
+- 아래 그림과 같이 설정후 다음단계로 이동 
+![image](https://user-images.githubusercontent.com/79297534/110447412-8ddeb580-8103-11eb-9927-70b473208c89.png)
+- 파이프라인 생성 선택
 
 ## 참고자료
 - https://docs.aws.amazon.com/codepipeline/latest/userguide/tutorials-simple-s3.html#s3-create-s3-bucket
