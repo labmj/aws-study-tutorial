@@ -15,6 +15,23 @@
 
 ## AWS Pipeline 구축 실습 (BASE)
 
+### CodeCommit repository 생성 및 복제
+- https://console.aws.amazon.com/iam/ 에접속하여 유저 생성 (권한 부여)
+- 생성된 유저 선택후 Security credentials탭에서 HTTPS Git credentials for AWS CodeCommit에 Generate로 자격증명 다운받기 (노출금지)
+- https://console.aws.amazon.com/codecommit/ 에 접속하여 Create bucket 선택
+- 아래 그림과 같이 설정 후 저장소 생성 선택 (Repository name : MyDemoRepo)
+![image](https://user-images.githubusercontent.com/79297534/110452218-5292b580-8108-11eb-9773-290b4b8c778b.png)
+- 저장소 HTTPS 복제하기
+![image](https://user-images.githubusercontent.com/79297534/110458999-c2586e80-810f-11eb-8559-415b41656469.png)
+- git SSL 인증서 검증 끄기 : git config --global http.sslVerify false
+- 복사한 HTTPS를 git clone 뒤에 붙여서 명령어 실행
+- 실행후 자격증명의 계정 정보 입력
+- 저장소 복제 확인
+![image](https://user-images.githubusercontent.com/79297534/110459637-8f62aa80-8110-11eb-9d8e-e35560862d7c.png)
+
+
+
+
 ### Amazon S3 버킷 만들기
 - https://console.aws.amazon.com/s3/ 에 접속하여 Create bucket 선택
 ![image](https://user-images.githubusercontent.com/79297534/110424399-16e6f400-80e6-11eb-976d-0fef9b3a2b13.png)
