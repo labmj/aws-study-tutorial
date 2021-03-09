@@ -117,6 +117,7 @@ https://docs.aws.amazon.com/ko_kr/codepipeline/latest/userguide/samples/SampleAp
 - 아래 그림과 같이 설정후 다음단계로 이동 
 ![image](https://user-images.githubusercontent.com/79297534/110447412-8ddeb580-8103-11eb-9927-70b473208c89.png)
 - 파이프라인 생성 선택
+- 완료된 화면에서 Deploy쪽에 Details 선택 -> Deployment lifecycle events에 Instance ID탭에 ID 선택 -> Public IPv4 DNS탭에 주소를 복사해서 주소창에 붙여 넣기 -> S3 버킷에 업로드한 샘플 애플리케이션에 대한 인덱스 페이지 출력시 성공완료
 
 ## 참고자료
 - https://docs.aws.amazon.com/codepipeline/latest/userguide/tutorials-simple-s3.html#s3-create-s3-bucket
