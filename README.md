@@ -79,6 +79,7 @@ https://docs.aws.amazon.com/ko_kr/codepipeline/latest/userguide/samples/SampleAp
 ![image](https://user-images.githubusercontent.com/79297534/110441225-dd6db300-80fc-11eb-8336-044be1495e7e.png)
 
 - Service부분을 다음과 같이 수정 (일부 엔드포인트에 대한 액세스 권한만 부여하려면 정책 문서 상자의 콘텐츠를 다음 정책)
+
  "Service": [
                     "codedeploy.us-east-2.amazonaws.com",
                     "codedeploy.us-east-1.amazonaws.com",
@@ -97,6 +98,7 @@ https://docs.aws.amazon.com/ko_kr/codepipeline/latest/userguide/samples/SampleAp
                     "codedeploy.ap-south-1.amazonaws.com",
                     "codedeploy.sa-east-1.amazonaws.com"
                 ]
+
 ![image](https://user-images.githubusercontent.com/79297534/110442466-3722ad00-80fe-11eb-9c6a-7cc57e560188.png)
 
 - 다시 이전 탭으로 돌아가 Create deployment group 선택
