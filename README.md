@@ -30,12 +30,25 @@
 
 ![image](https://user-images.githubusercontent.com/79297534/110459637-8f62aa80-8110-11eb-9d8e-e35560862d7c.png)
 
-- 깃 설정 및 커밋 확인
+- https://docs.aws.amazon.com/ko_kr/codepipeline/latest/userguide/samples/SampleApp_Linux.zip 해당 파일 설치후 C:\tmp\MyDemoRepo 에 압축풀기
+- 폴더구조
+/tmp
+   └-- MyDemoRepo
+       │-- appspec.yml
+       │-- index.html
+       │-- LICENSE.txt
+       └-- scripts
+           │-- install_dependencies
+           │-- start_server
+           └-- stop_server
+
+- 깃 설정 및 커밋 체크 (cd c:\temp\MyDemoRepo)
 
 ![image](https://user-images.githubusercontent.com/79297534/110462300-d605d400-8113-11eb-8cb6-942db5ac0517.png)
 ![image](https://user-images.githubusercontent.com/79297534/110462368-f33aa280-8113-11eb-860b-5c846629d30d.png)
 
 
+--------작성중 aws codecommit 관련-----------------------------------------------------------------------------------------
 
 ### Amazon S3 버킷 만들기
 - https://console.aws.amazon.com/s3/ 에 접속하여 Create bucket 선택
@@ -146,3 +159,4 @@ https://docs.aws.amazon.com/ko_kr/codepipeline/latest/userguide/samples/SampleAp
 ## 참고자료
 - https://docs.aws.amazon.com/codepipeline/latest/userguide/tutorials-simple-s3.html#s3-create-s3-bucket
 - https://docs.aws.amazon.com/codedeploy/latest/userguide/getting-started-create-service-role.html
+- https://docs.aws.amazon.com/codepipeline/latest/userguide/tutorials-simple-codecommit.html
