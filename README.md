@@ -13,7 +13,7 @@
 8. 프로덕션에 배포하세요.
 
 
-## AWS Pipeline 구축 실습
+## AWS Pipeline 구축 실습 (BASE)
 
 ### Amazon S3 버킷 만들기
 - https://console.aws.amazon.com/s3/ 에 접속하여 Create bucket 선택
