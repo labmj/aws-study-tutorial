@@ -27,8 +27,11 @@
 - 복사한 HTTPS를 git clone 뒤에 붙여서 명령어 실행
 - 실행후 자격증명의 계정 정보 입력
 - 로컬에 복제 확인
+
 ![image](https://user-images.githubusercontent.com/79297534/110459637-8f62aa80-8110-11eb-9d8e-e35560862d7c.png)
+
 - 깃 설정 및 커밋 확인
+
 ![image](https://user-images.githubusercontent.com/79297534/110462300-d605d400-8113-11eb-8cb6-942db5ac0517.png)
 ![image](https://user-images.githubusercontent.com/79297534/110462368-f33aa280-8113-11eb-860b-5c846629d30d.png)
 
