@@ -42,7 +42,6 @@ https://docs.aws.amazon.com/ko_kr/codepipeline/latest/userguide/samples/SampleAp
 - Add tags에서 Next:Review로 넘거간후 아래 그림처럼 작성 (Role name:EC2InstanceRole-0309)
 ![image](https://user-images.githubusercontent.com/79297534/110428803-3e8d8a80-80ed-11eb-97bd-ffb4002becdc.png)
 
-
 ### 인스턴스 실행하기 위한 설정
 - https://console.aws.amazon.com/ec2/ 에 접속하여 Launch instance 선택
 ![image](https://user-images.githubusercontent.com/79297534/110429118-ca9fb200-80ed-11eb-9810-201c94efe760.png)
@@ -53,11 +52,29 @@ https://docs.aws.amazon.com/ko_kr/codepipeline/latest/userguide/samples/SampleAp
 - 아래 그림 같이 변경후 스크롤을 내려 Advanced Details탭으로 이동
 ![image](https://user-images.githubusercontent.com/79297534/110430103-3898a900-80ef-11eb-945b-6ccb1a69e4b7.png)
 - Advanced Details에 User data부분에 As text에 체크한후 아래의 글을 붙여넣기 (bucket-name에는 본인의 리전을 넣어야함)
-- 실습에서는 bucket-name에 aws-codedeploy-ap-northeast-2를 기입함
+- 실습에서는 붙여넣기한 글에서 bucket-name을 aws-codedeploy-ap-northeast-2로 기입후 Next: Add Storage 선택
 ![image](https://user-images.githubusercontent.com/79297534/110431441-2a4b8c80-80f1-11eb-9dbd-8bb41779b18d.png)
 ![image](https://user-images.githubusercontent.com/79297534/110430504-d55b4680-80ef-11eb-8f09-d2ee26bd3f92.png)
 ![image](https://user-images.githubusercontent.com/79297534/110430683-15bac480-80f0-11eb-8dec-b2a3ef33b726.png)
+- Step 4: Add Storage에서는 변경 없이 Next: Add Tags 선택
+- Add Tag후 그림과 같이 입력후  Next: Configure Security Group 선택 (Key : Name / Value : MyCodePipelineDemo) 
+![image](https://user-images.githubusercontent.com/79297534/110432030-f6bd3200-80f1-11eb-9f4f-c56ba1e1e6c2.png)
+- 80 port 허용후 Review and Launch 선택
+![image](https://user-images.githubusercontent.com/79297534/110434219-e2c6ff80-80f4-11eb-944f-a7c9eb256cd6.png)
+- 확인후 Launch 선택, 아래 화면의 Proceed without a key pair 선택후 Launch Instances 선택
+![image](https://user-images.githubusercontent.com/79297534/110434680-77316200-80f5-11eb-86a3-60df995147be.png)
+
+### CodeDeploy에서 어플리케이션 생성
+- https://console.aws.amazon.com/codedeploy 에 접속후 Create application 선택
+- 어플리케이션명은 MyDemoApplication-0309, 플랫폼은 EC2/On-premises 선택 후 어플리케이션 생성 버튼 선택 
+![image](https://user-images.githubusercontent.com/79297534/110435607-8fee4780-80f6-11eb-8587-8c8d907df4e6.png)
+- 해당 화면에서 Create deployment group 선택
+![image](https://user-images.githubusercontent.com/79297534/110436942-2707cf00-80f8-11eb-8fba-c4d84f3dbc3c.png)
+
+
+- Create deployment group
 
 
 ## 참고자료
 - https://docs.aws.amazon.com/codepipeline/latest/userguide/tutorials-simple-s3.html#s3-create-s3-bucket
+- https://docs.aws.amazon.com/codedeploy/latest/userguide/getting-started-create-service-role.html
