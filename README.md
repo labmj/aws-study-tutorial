@@ -68,11 +68,45 @@ https://docs.aws.amazon.com/ko_kr/codepipeline/latest/userguide/samples/SampleAp
 - https://console.aws.amazon.com/codedeploy 에 접속후 Create application 선택
 - 어플리케이션명은 MyDemoApplication-0309, 플랫폼은 EC2/On-premises 선택 후 어플리케이션 생성 버튼 선택 
 ![image](https://user-images.githubusercontent.com/79297534/110435607-8fee4780-80f6-11eb-8587-8c8d907df4e6.png)
-- 해당 화면에서 Create deployment group 선택
+- Service role을 위해 새창으로 https://console.aws.amazon.com/iam/ 에 접속후 우측 탭의 Roles 선택
+- EC2/온프레미스 배포 - CodeDeploy 선택 / Amazon ECS 배포 - CodeDeploy - ECS 선택 / AWS Lambda 배포 Lambda용 CodeDeploy 선택
+- Next: Permissions ->  Nex: Tags -> Next: Review 선택
+![image](https://user-images.githubusercontent.com/79297534/110439387-be6e2180-80fa-11eb-9e62-bfa2b5455e7c.png)
+![image](https://user-images.githubusercontent.com/79297534/110439667-12790600-80fb-11eb-83f9-cc347344a6bb.png)
+- Role name을 CodeDeployServiceRole-3090로 지정해준 후 Create role 선택
+- 만들어진 Role선택후 Trust relationships탭에서 Edit trust relationships 선택 
+![image](https://user-images.githubusercontent.com/79297534/110440712-502a5e80-80fc-11eb-8c5c-742d642b9449.png)
+![image](https://user-images.githubusercontent.com/79297534/110441225-dd6db300-80fc-11eb-8336-044be1495e7e.png)
+
+- Service부분을 다음과 같이 수정 (일부 엔드포인트에 대한 액세스 권한만 부여하려면 정책 문서 상자의 콘텐츠를 다음 정책)
+ "Service": [
+                    "codedeploy.us-east-2.amazonaws.com",
+                    "codedeploy.us-east-1.amazonaws.com",
+                    "codedeploy.us-west-1.amazonaws.com",
+                    "codedeploy.us-west-2.amazonaws.com",
+                    "codedeploy.eu-west-3.amazonaws.com",
+                    "codedeploy.ca-central-1.amazonaws.com",
+                    "codedeploy.eu-west-1.amazonaws.com",
+                    "codedeploy.eu-west-2.amazonaws.com",
+                    "codedeploy.eu-central-1.amazonaws.com",
+                    "codedeploy.ap-east-1.amazonaws.com",
+                    "codedeploy.ap-northeast-1.amazonaws.com",
+                    "codedeploy.ap-northeast-2.amazonaws.com",
+                    "codedeploy.ap-southeast-1.amazonaws.com",
+                    "codedeploy.ap-southeast-2.amazonaws.com",
+                    "codedeploy.ap-south-1.amazonaws.com",
+                    "codedeploy.sa-east-1.amazonaws.com"
+                ]
+![image](https://user-images.githubusercontent.com/79297534/110442466-3722ad00-80fe-11eb-9c6a-7cc57e560188.png)
+
+- 다시 이전 탭으로 돌아가 Create deployment group 선택
 ![image](https://user-images.githubusercontent.com/79297534/110436942-2707cf00-80f8-11eb-8fba-c4d84f3dbc3c.png)
+- Create deployment group선택후 아래의 그림들처럼 기입 (group name:MyDemoDeploymentGroup-0309) 
+![image](https://user-images.githubusercontent.com/79297534/110443469-49511b00-80ff-11eb-985c-24d4b6555619.png)
+![image](https://user-images.githubusercontent.com/79297534/110443668-84534e80-80ff-11eb-9a51-5dc3a5db164c.png)
+![image](https://user-images.githubusercontent.com/79297534/110443773-a351e080-80ff-11eb-8cd5-8886eb3338e3.png)
+- 현실습에서는 로드밸런서를 설정할 필요없음
 
-
-- Create deployment group
 
 
 ## 참고자료
