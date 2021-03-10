@@ -21,7 +21,7 @@
 
 -----------------------------------------------------------------------------------------------------------------
 
-## AWS Pipeline 구축 실습 (3S repository)
+## AWS Pipeline 구축 실습 (S3 repository)
 
 ### Amazon S3 버킷 만들기
 - https://console.aws.amazon.com/s3/ 에 접속하여 Create bucket 선택
@@ -80,7 +80,7 @@ https://docs.aws.amazon.com/ko_kr/codepipeline/latest/userguide/samples/SampleAp
 - Next: Permissions ->  Nex: Tags -> Next: Review 선택 (실습에서는 CodeDeploy 선택)
 ![image](https://user-images.githubusercontent.com/79297534/110439387-be6e2180-80fa-11eb-9e62-bfa2b5455e7c.png)
 ![image](https://user-images.githubusercontent.com/79297534/110439667-12790600-80fb-11eb-83f9-cc347344a6bb.png)
-- Role name을 CodeDeployServiceRole-3090로 지정해준 후 Create role 선택
+- Role name을 CodeDeployServiceRole-0309로 지정해준 후 Create role 선택
 - 만들어진 Role선택후 Trust relationships탭에서 Edit trust relationships 선택 
 ![image](https://user-images.githubusercontent.com/79297534/110440712-502a5e80-80fc-11eb-8c5c-742d642b9449.png)
 ![image](https://user-images.githubusercontent.com/79297534/110441225-dd6db300-80fc-11eb-8336-044be1495e7e.png)
