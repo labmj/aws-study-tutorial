@@ -65,7 +65,9 @@
 ![image](https://user-images.githubusercontent.com/79297534/110555655-4f3b1080-8180-11eb-8e3d-884516df1ebe.png)
 - 아래와 같이 설정 후 파이프라인 생성
 ![image](https://user-images.githubusercontent.com/79297534/110555752-7abdfb00-8180-11eb-9a39-69eb2f3e7f04.png)
+
 - 생성 확인
+
 ![image](https://user-images.githubusercontent.com/79297534/110558243-76e0a780-8185-11eb-9b44-4a0808311830.png)
 
 
