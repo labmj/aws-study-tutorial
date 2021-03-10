@@ -53,12 +53,22 @@
 - 태그 추가하여 아래 그림과 같이 채워주고 다음 단계 이동
 ![image](https://user-images.githubusercontent.com/79297534/110468309-74496800-811b-11eb-8960-c159a43a4c03.png)
 - 다음 그림과 같이 설정후 다음 단게 이동
-![image](https://user-images.githubusercontent.com/79297534/110469010-6d6f2500-811c-11eb-9914-49ba89ec2d2f.png)
+![image](https://user-images.githubusercontent.com/79297534/110554756-c1125a80-817e-11eb-8512-95883a7be7dd.png)
 - 시작하기를 선택후 키 페어 없이 계속으로 설정후 인스턴스 시작 선택
 ![image](https://user-images.githubusercontent.com/79297534/110469086-8677d600-811c-11eb-977e-1d74a1d149f1.png)
+- (CodeDeploy에서 어플리케이션 생성)에서 만든 MyFirstPipeline-0309, MyDemoApplication-0309, MyDemoDeploymentGroup-0309 재사용
+- https://console.aws.amazon.com/codepipeline/ 에서 파이프라인 생성 선택
+- 파이프라인 이름 : MySecondPipeline 으로 설정후 다음 단계로 이동
+- 아래 그림과 같이 설정후 다음 단계 이동
+![image](https://user-images.githubusercontent.com/79297534/110555421-ec497980-817f-11eb-9cee-d94c8b987faa.png)
+- 빌드 스테이지 건너뛰기 선택 
+![image](https://user-images.githubusercontent.com/79297534/110555655-4f3b1080-8180-11eb-8e3d-884516df1ebe.png)
+- 아래와 같이 설정 후 파이프라인 생성
+![image](https://user-images.githubusercontent.com/79297534/110555752-7abdfb00-8180-11eb-9a39-69eb2f3e7f04.png)
 
 
---------codecommit 저장소 관련(위)(미완) /  S3 저장소 관련(아래)(완)------------------------------------------------
+
+--------codecommit 저장소 관련 파이프라인(위)(미완) /  S3 저장소 관련 파이프라인(아래)(완)--------------------------------------------
 
 ### Amazon S3 버킷 만들기
 - https://console.aws.amazon.com/s3/ 에 접속하여 Create bucket 선택
