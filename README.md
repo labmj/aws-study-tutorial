@@ -12,67 +12,16 @@
 7. 승인자에게 승인을 보냅니다.
 8. 프로덕션에 배포하세요.
 
-
-## AWS Pipeline 구축 실습 (BASE)
-
-### CodeCommit repository 생성 및 로컬 연결
-- https://console.aws.amazon.com/iam/ 에접속하여 유저 생성 (권한 부여)
-- 생성된 유저 선택후 Security credentials탭에서 HTTPS Git credentials for AWS CodeCommit에 Generate로 자격증명 다운받기 (노출금지)
-- https://console.aws.amazon.com/codecommit/ 에 접속하여 Create bucket 선택
-- 아래 그림과 같이 설정 후 저장소 생성 선택 (Repository name : MyDemoRepo)
-![image](https://user-images.githubusercontent.com/79297534/110452218-5292b580-8108-11eb-9773-290b4b8c778b.png)
-- 저장소 HTTPS 복제하기
-![image](https://user-images.githubusercontent.com/79297534/110458999-c2586e80-810f-11eb-8559-415b41656469.png)
-- git SSL 인증서 검증 끄기 : git config --global http.sslVerify false
-- 복사한 HTTPS를 git clone 뒤에 붙여서 명령어 실행
-- 실행후 자격증명의 계정 정보 입력
-- 로컬에 복제 확인
-
-![image](https://user-images.githubusercontent.com/79297534/110459637-8f62aa80-8110-11eb-9d8e-e35560862d7c.png)
-
-- https://docs.aws.amazon.com/ko_kr/codepipeline/latest/userguide/samples/SampleApp_Linux.zip 해당 파일 설치후 C:\tmp\MyDemoRepo 에 압축풀기
-- 폴더구조
-
-![image](https://user-images.githubusercontent.com/79297534/110463486-4f51f680-8115-11eb-9ffd-27bea20357e0.png)
-
-- 깃 설정 및 커밋 체크 (cd c:\temp\MyDemoRepo)
-
-![image](https://user-images.githubusercontent.com/79297534/110462300-d605d400-8113-11eb-8cb6-942db5ac0517.png)
-![image](https://user-images.githubusercontent.com/79297534/110462368-f33aa280-8113-11eb-860b-5c846629d30d.png)
-
-- (Amazon EC2 Windows instances 생성 및 CodeDeploy agent 설치)에서 만든 EC2InstanceRole-0309 활용 
-- https://console.aws.amazon.com/ec2/ 에 접속하여 [Launch instance](인스턴스 실행) 선택
-- Amazon Linux 2를 검색하고, 리스트 중 Amazon Linux 2 AMI (HVM), SSD Volume Type 선택
-![image](https://user-images.githubusercontent.com/79297534/110467225-1a946e00-811a-11eb-9bd3-4d3530beb750.png)
-- t2.micro선택 후 다음 단계 이동
-- 아래 그림과 같이 설정후 다음 단계 이동
-![image](https://user-images.githubusercontent.com/79297534/110467562-8676d680-811a-11eb-9995-68766918abc4.png)
-- 고급 세부 정보 추가후 다음 단계 이동
-![image](https://user-images.githubusercontent.com/79297534/110467853-d9e92480-811a-11eb-8ff1-9cde2839530e.png)
-- 4. 스토리지 추가 페이지 수정 없이 다음: 태그로 이동
-- 태그 추가하여 아래 그림과 같이 채워주고 다음 단계 이동
-![image](https://user-images.githubusercontent.com/79297534/110468309-74496800-811b-11eb-8960-c159a43a4c03.png)
-- 다음 그림과 같이 설정후 다음 단게 이동
-![image](https://user-images.githubusercontent.com/79297534/110554756-c1125a80-817e-11eb-8512-95883a7be7dd.png)
-- 시작하기를 선택후 키 페어 없이 계속으로 설정후 인스턴스 시작 선택
-![image](https://user-images.githubusercontent.com/79297534/110469086-8677d600-811c-11eb-977e-1d74a1d149f1.png)
-- (CodeDeploy에서 어플리케이션 생성)에서 만든 MyFirstPipeline-0309, MyDemoApplication-0309, MyDemoDeploymentGroup-0309 재사용
-- https://console.aws.amazon.com/codepipeline/ 에서 파이프라인 생성 선택
-- 파이프라인 이름 : MySecondPipeline 으로 설정후 다음 단계로 이동
-- 아래 그림과 같이 설정후 다음 단계 이동
-![image](https://user-images.githubusercontent.com/79297534/110555421-ec497980-817f-11eb-9cee-d94c8b987faa.png)
-- 빌드 스테이지 건너뛰기 선택 
-![image](https://user-images.githubusercontent.com/79297534/110555655-4f3b1080-8180-11eb-8e3d-884516df1ebe.png)
-- 아래와 같이 설정 후 파이프라인 생성
-![image](https://user-images.githubusercontent.com/79297534/110555752-7abdfb00-8180-11eb-9a39-69eb2f3e7f04.png)
-
-- 생성 확인
-
-![image](https://user-images.githubusercontent.com/79297534/110558243-76e0a780-8185-11eb-9b44-4a0808311830.png)
+## AWS Batch 실습 (작성중)
+### 작성중
+![image](https://user-images.githubusercontent.com/79297534/110588126-f1c2b600-81b7-11eb-9657-e4076f7cd3b5.png)
 
 
 
---------codecommit 저장소 관련 파이프라인(위) /  S3 저장소 관련 파이프라인(아래)(완)--------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------
+
+## AWS Pipeline 구축 실습 (3S repository)
 
 ### Amazon S3 버킷 만들기
 - https://console.aws.amazon.com/s3/ 에 접속하여 Create bucket 선택
@@ -178,6 +127,64 @@ https://docs.aws.amazon.com/ko_kr/codepipeline/latest/userguide/samples/SampleAp
 ![image](https://user-images.githubusercontent.com/79297534/110447412-8ddeb580-8103-11eb-9927-70b473208c89.png)
 - 파이프라인 생성 선택
 - 완료된 화면에서 Deploy쪽에 Details 선택 -> Deployment lifecycle events에 Instance ID탭에 ID 선택 -> Public IPv4 DNS탭에 주소를 복사해서 주소창에 붙여 넣기 -> S3 버킷에 업로드한 샘플 애플리케이션에 대한 인덱스 페이지 출력시 성공완료
+
+
+## AWS Pipeline 구축 실습 (CodeCommit repository)
+
+### CodeCommit repository 생성 및 로컬 연결
+- https://console.aws.amazon.com/iam/ 에접속하여 유저 생성 (권한 부여)
+- 생성된 유저 선택후 Security credentials탭에서 HTTPS Git credentials for AWS CodeCommit에 Generate로 자격증명 다운받기 (노출금지)
+- https://console.aws.amazon.com/codecommit/ 에 접속하여 Create bucket 선택
+- 아래 그림과 같이 설정 후 저장소 생성 선택 (Repository name : MyDemoRepo)
+![image](https://user-images.githubusercontent.com/79297534/110452218-5292b580-8108-11eb-9773-290b4b8c778b.png)
+- 저장소 HTTPS 복제하기
+![image](https://user-images.githubusercontent.com/79297534/110458999-c2586e80-810f-11eb-8559-415b41656469.png)
+- git SSL 인증서 검증 끄기 : git config --global http.sslVerify false
+- 복사한 HTTPS를 git clone 뒤에 붙여서 명령어 실행
+- 실행후 자격증명의 계정 정보 입력
+- 로컬에 복제 확인
+
+![image](https://user-images.githubusercontent.com/79297534/110459637-8f62aa80-8110-11eb-9d8e-e35560862d7c.png)
+
+- https://docs.aws.amazon.com/ko_kr/codepipeline/latest/userguide/samples/SampleApp_Linux.zip 해당 파일 설치후 C:\tmp\MyDemoRepo 에 압축풀기
+- 폴더구조
+
+![image](https://user-images.githubusercontent.com/79297534/110463486-4f51f680-8115-11eb-9ffd-27bea20357e0.png)
+
+- 깃 설정 및 커밋 체크 (cd c:\temp\MyDemoRepo)
+
+![image](https://user-images.githubusercontent.com/79297534/110462300-d605d400-8113-11eb-8cb6-942db5ac0517.png)
+![image](https://user-images.githubusercontent.com/79297534/110462368-f33aa280-8113-11eb-860b-5c846629d30d.png)
+
+- (Amazon EC2 Windows instances 생성 및 CodeDeploy agent 설치)에서 만든 EC2InstanceRole-0309 활용 
+- https://console.aws.amazon.com/ec2/ 에 접속하여 [Launch instance](인스턴스 실행) 선택
+- Amazon Linux 2를 검색하고, 리스트 중 Amazon Linux 2 AMI (HVM), SSD Volume Type 선택
+![image](https://user-images.githubusercontent.com/79297534/110467225-1a946e00-811a-11eb-9bd3-4d3530beb750.png)
+- t2.micro선택 후 다음 단계 이동
+- 아래 그림과 같이 설정후 다음 단계 이동
+![image](https://user-images.githubusercontent.com/79297534/110467562-8676d680-811a-11eb-9995-68766918abc4.png)
+- 고급 세부 정보 추가후 다음 단계 이동
+![image](https://user-images.githubusercontent.com/79297534/110467853-d9e92480-811a-11eb-8ff1-9cde2839530e.png)
+- 4. 스토리지 추가 페이지 수정 없이 다음: 태그로 이동
+- 태그 추가하여 아래 그림과 같이 채워주고 다음 단계 이동
+![image](https://user-images.githubusercontent.com/79297534/110468309-74496800-811b-11eb-8960-c159a43a4c03.png)
+- 다음 그림과 같이 설정후 다음 단게 이동
+![image](https://user-images.githubusercontent.com/79297534/110554756-c1125a80-817e-11eb-8512-95883a7be7dd.png)
+- 시작하기를 선택후 키 페어 없이 계속으로 설정후 인스턴스 시작 선택
+![image](https://user-images.githubusercontent.com/79297534/110469086-8677d600-811c-11eb-977e-1d74a1d149f1.png)
+- (CodeDeploy에서 어플리케이션 생성)에서 만든 MyFirstPipeline-0309, MyDemoApplication-0309, MyDemoDeploymentGroup-0309 재사용
+- https://console.aws.amazon.com/codepipeline/ 에서 파이프라인 생성 선택
+- 파이프라인 이름 : MySecondPipeline 으로 설정후 다음 단계로 이동
+- 아래 그림과 같이 설정후 다음 단계 이동
+![image](https://user-images.githubusercontent.com/79297534/110555421-ec497980-817f-11eb-9cee-d94c8b987faa.png)
+- 빌드 스테이지 건너뛰기 선택 
+![image](https://user-images.githubusercontent.com/79297534/110555655-4f3b1080-8180-11eb-8e3d-884516df1ebe.png)
+- 아래와 같이 설정 후 파이프라인 생성
+![image](https://user-images.githubusercontent.com/79297534/110555752-7abdfb00-8180-11eb-9a39-69eb2f3e7f04.png)
+
+- 생성 확인
+
+![image](https://user-images.githubusercontent.com/79297534/110558243-76e0a780-8185-11eb-9b44-4a0808311830.png)
 
 ## 참고자료
 - https://docs.aws.amazon.com/codepipeline/latest/userguide/tutorials-simple-s3.html#s3-create-s3-bucket
