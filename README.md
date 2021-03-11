@@ -13,19 +13,29 @@
 8. 프로덕션에 배포하세요.
 
 ## AWS Batch 실습 (작성중)
-### 작성중
+### AWS Batch와 Step Functions를 결합하여 비디오 처리 워크플로 생성
+- https://console.aws.amazon.com/batch/ 에 접속하여 좌측 네비바에 위치한 컴퓨터 환경 선택후 아래 그림과 같이 설정함 (Create new role로 선택할 경우 필요한 서비스 역할을 만들어줌)
 
 ![image](https://user-images.githubusercontent.com/79297534/110723596-a7911180-8257-11eb-9c09-e535605e9140.png)
 
+- 아래 그림과 같이 설정후 환경 생성 선택 (Fargate경우 내부적으로 EC2 자원 관리를 해줌) 
+- 프로비저닝 : 사용자의 요구에 맞게 시스템 자원을 할당, 배치, 배포해 두었다가 필요 시 시스템을 즉시 사용할 수 있는 상태로 미리 준비해 두는 것
+
 ![image](https://user-images.githubusercontent.com/79297534/110723676-c2fc1c80-8257-11eb-9e79-136cd1f9da85.png)
+
+- 좌측 네비바에 작업 대기열 선택 후 아래 그림들과 같이 설정함 (StepsBatchTutorial_HighPriorityQueue)
 
 ![image](https://user-images.githubusercontent.com/79297534/110603297-36574d00-81ca-11eb-96b2-5b49a3e264f1.png)
 
 ![image](https://user-images.githubusercontent.com/79297534/110603378-4a9b4a00-81ca-11eb-84be-70336be44b62.png)
 
+- 위와 같은 과정으로 우선순위만 다르게 대기열 하나더 생성 (StepsBatchTutorial_LowPriorityQueue)
+
 ![image](https://user-images.githubusercontent.com/79297534/110603690-9fd75b80-81ca-11eb-976e-3b850718017a.png)
 
 ![image](https://user-images.githubusercontent.com/79297534/110603743-acf44a80-81ca-11eb-9f40-2b2659891760.png)
+
+- 만들어진 작업 대기열 확인
 
 ![image](https://user-images.githubusercontent.com/79297534/110604331-4f143280-81cb-11eb-97fc-a9430eab2cf2.png)
 
