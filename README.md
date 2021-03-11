@@ -45,14 +45,22 @@
 
 ![image](https://user-images.githubusercontent.com/79297534/110718584-95f73c00-824e-11eb-93ca-96daf9312531.png)
 
-- https://aws.amazon.com/ko/getting-started/hands-on/process-video-jobs-with-aws-batch-on-aws-step-functions/ 해당 사이트 참조하여 JSON 작성 REGION에 현재 작업중 리전, 112233445566를 현재 계정 번호로 대체 해줘야함 (총 20개 변경 필요) 
+- https://aws.amazon.com/ko/getting-started/hands-on/process-video-jobs-with-aws-batch-on-aws-step-functions/ 해당 사이트 참조하여 JSON 작성 REGION에 현재 작업중 리전(소문자!!), 112233445566를 현재 계정 번호로 대체 해줘야함 (총 20개 변경 필요) 
 ![image](https://user-images.githubusercontent.com/79297534/110718604-a4ddee80-824e-11eb-8f2d-d85c462dce27.png)
 
 ![image](https://user-images.githubusercontent.com/79297534/110718818-0bfba300-824f-11eb-8570-be6ff157da12.png)
 
 ![image](https://user-images.githubusercontent.com/79297534/110718861-25045400-824f-11eb-8b95-3f047c89c190.png)
 
+![image](https://user-images.githubusercontent.com/79297534/110743247-13d13c80-827b-11eb-9173-21fdf3f5358d.png)
 
+![image](https://user-images.githubusercontent.com/79297534/110743936-3879e400-827c-11eb-9a62-71125adbbe22.png)
+
+![image](https://user-images.githubusercontent.com/79297534/110744352-e5546100-827c-11eb-9012-2d06ef0c2775.png)
+
+![image](https://user-images.githubusercontent.com/79297534/110744486-1af94a00-827d-11eb-9c1e-6db0e95531c6.png)
+
+![image](https://user-images.githubusercontent.com/79297534/110744560-3cf2cc80-827d-11eb-933e-aa0d7bb5fcd3.png)
 
 -----------------------------------------------------------------------------------------------------------------
 
