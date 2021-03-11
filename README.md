@@ -69,17 +69,27 @@
 
 ![image](https://user-images.githubusercontent.com/79297534/110718818-0bfba300-824f-11eb-8570-be6ff157da12.png)
 
-- 상태 머신 확인 및 실행
+- 상태 머신 확인 및 실행 시작
 
 ![image](https://user-images.githubusercontent.com/79297534/110763003-c366d880-8294-11eb-9fcc-fd51d5ff1930.png)
 
+- 실행 시작후 그래프 검사기에 프로세스별 진행 확인 및 완료
+
 ![image](https://user-images.githubusercontent.com/79297534/110743247-13d13c80-827b-11eb-9173-21fdf3f5358d.png)
+
+- https://console.aws.amazon.com/batch/ 에서 대시보드 확인 SUCCEEDED 컬럼에 있는 초록 체크표 선택
 
 ![image](https://user-images.githubusercontent.com/79297534/110743936-3879e400-827c-11eb-9a62-71125adbbe22.png)
 
+- 성공된 작업 목록 확인 및 이름 컬럼에 SplitVideo 선택  
+
 ![image](https://user-images.githubusercontent.com/79297534/110744352-e5546100-827c-11eb-9012-2d06ef0c2775.png)
 
+- SplitVideo 세부 정보 확인 및 로그 스트림 이름 선택
+
 ![image](https://user-images.githubusercontent.com/79297534/110744486-1af94a00-827d-11eb-9c1e-6db0e95531c6.png)
+
+- 로그 확인
 
 ![image](https://user-images.githubusercontent.com/79297534/110744560-3cf2cc80-827d-11eb-933e-aa0d7bb5fcd3.png)
 
