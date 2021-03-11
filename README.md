@@ -14,8 +14,46 @@
 
 ## AWS Batch 실습 (작성중)
 ### 작성중
-![image](https://user-images.githubusercontent.com/79297534/110588126-f1c2b600-81b7-11eb-9657-e4076f7cd3b5.png)
 
+![image](https://user-images.githubusercontent.com/79297534/110723596-a7911180-8257-11eb-9c09-e535605e9140.png)
+
+![image](https://user-images.githubusercontent.com/79297534/110723676-c2fc1c80-8257-11eb-9e79-136cd1f9da85.png)
+
+
+![image](https://user-images.githubusercontent.com/79297534/110720981-e07ab780-8252-11eb-8eb8-14b6cb6703c9.png)
+
+![image](https://user-images.githubusercontent.com/79297534/110603297-36574d00-81ca-11eb-96b2-5b49a3e264f1.png)
+
+![image](https://user-images.githubusercontent.com/79297534/110603378-4a9b4a00-81ca-11eb-84be-70336be44b62.png)
+
+![image](https://user-images.githubusercontent.com/79297534/110603690-9fd75b80-81ca-11eb-976e-3b850718017a.png)
+
+![image](https://user-images.githubusercontent.com/79297534/110603743-acf44a80-81ca-11eb-9f40-2b2659891760.png)
+
+![image](https://user-images.githubusercontent.com/79297534/110604331-4f143280-81cb-11eb-97fc-a9430eab2cf2.png)
+
+![image](https://user-images.githubusercontent.com/79297534/110714505-d783e900-8246-11eb-9b0c-1a468bb08c43.png)
+
+![image](https://user-images.githubusercontent.com/79297534/110716294-339c3c80-824a-11eb-8339-5f6e00f87ff6.png)
+
+![image](https://user-images.githubusercontent.com/79297534/110717138-d5705900-824b-11eb-8de8-86f55ef90245.png)
+
+![image](https://user-images.githubusercontent.com/79297534/110717176-e620cf00-824b-11eb-9725-8ca2c9a956f1.png)
+
+![image](https://user-images.githubusercontent.com/79297534/110717203-f33dbe00-824b-11eb-838e-d23b33ef9aa1.png)
+
+![image](https://user-images.githubusercontent.com/79297534/110717231-ff298000-824b-11eb-85bf-fafbc714a754.png)
+
+- https://console.aws.amazon.com/states/home#/statemachines/create 접속
+
+![image](https://user-images.githubusercontent.com/79297534/110718584-95f73c00-824e-11eb-93ca-96daf9312531.png)
+
+- https://aws.amazon.com/ko/getting-started/hands-on/process-video-jobs-with-aws-batch-on-aws-step-functions/ 해당 사이트 참조하여 JSON 작성 REGION에 현재 작업중 리전, 112233445566를 현재 계정 번호로 대체 해줘야함 (총 20개 변경 필요) 
+![image](https://user-images.githubusercontent.com/79297534/110718604-a4ddee80-824e-11eb-8f2d-d85c462dce27.png)
+
+![image](https://user-images.githubusercontent.com/79297534/110718818-0bfba300-824f-11eb-8570-be6ff157da12.png)
+
+![image](https://user-images.githubusercontent.com/79297534/110718861-25045400-824f-11eb-8b95-3f047c89c190.png)
 
 
 
