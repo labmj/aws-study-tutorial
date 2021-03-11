@@ -35,7 +35,7 @@
 
 ![image](https://user-images.githubusercontent.com/79297534/110603743-acf44a80-81ca-11eb-9f40-2b2659891760.png)
 
-- 만들어진 작업 대기열 확인
+- 만들어진 작업 대기열 확인 (priority가 낮을 수록 먼저 실행됨)
 
 ![image](https://user-images.githubusercontent.com/79297534/110604331-4f143280-81cb-11eb-97fc-a9430eab2cf2.png)
 
