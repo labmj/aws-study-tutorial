@@ -63,14 +63,17 @@
 - 112233445566를 현재 계정 번호로 변경 (총 20군데 변경 필요) 
 - Json 내용중 StepsBatchTutorial_ExtractFeatures -> StepsBatchTutorial_FindFeatures 변경필요
 
-
 ![image](https://user-images.githubusercontent.com/79297534/110718604-a4ddee80-824e-11eb-8f2d-d85c462dce27.png)
+
+- 아래 그림과 같이 세부 정보 지정
 
 ![image](https://user-images.githubusercontent.com/79297534/110718818-0bfba300-824f-11eb-8570-be6ff157da12.png)
 
+- 아래 그림과 같이 세부 정보 지정
+
 ![image](https://user-images.githubusercontent.com/79297534/110718861-25045400-824f-11eb-8b95-3f047c89c190.png)
 
-![image](https://user-images.githubusercontent.com/79297534/110743247-13d13c80-827b-11eb-9173-21fdf3f5358d.png)
+![image](https://user-images.githubusercontent.com/79297534/110763003-c366d880-8294-11eb-9fcc-fd51d5ff1930.png)
 
 ![image](https://user-images.githubusercontent.com/79297534/110743936-3879e400-827c-11eb-9a62-71125adbbe22.png)
 
