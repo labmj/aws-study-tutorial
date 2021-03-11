@@ -69,11 +69,11 @@
 
 ![image](https://user-images.githubusercontent.com/79297534/110718818-0bfba300-824f-11eb-8570-be6ff157da12.png)
 
-- 아래 그림과 같이 세부 정보 지정
-
-![image](https://user-images.githubusercontent.com/79297534/110718861-25045400-824f-11eb-8b95-3f047c89c190.png)
+- 상태 머신 확인 및 실행
 
 ![image](https://user-images.githubusercontent.com/79297534/110763003-c366d880-8294-11eb-9fcc-fd51d5ff1930.png)
+
+![image](https://user-images.githubusercontent.com/79297534/110743247-13d13c80-827b-11eb-9173-21fdf3f5358d.png)
 
 ![image](https://user-images.githubusercontent.com/79297534/110743936-3879e400-827c-11eb-9a62-71125adbbe22.png)
 
