@@ -39,10 +39,13 @@
 
 ![image](https://user-images.githubusercontent.com/79297534/110604331-4f143280-81cb-11eb-97fc-a9430eab2cf2.png)
 
+- 우측 네비바에서 작업 정의 생성 선택후 아래 그림들과 같이 설정후 작업 생성 (StepsBatchTutorial_TranscodeVideo)
+
 ![image](https://user-images.githubusercontent.com/79297534/110714505-d783e900-8246-11eb-9b0c-1a468bb08c43.png)
 
 ![image](https://user-images.githubusercontent.com/79297534/110716294-339c3c80-824a-11eb-8339-5f6e00f87ff6.png)
 
+- 위와 같은 방식으로 작업 정의 생성 이름과 명령은 아래 그림을 참조 (StepsBatchTutorial_FindFeatures, StepsBatchTutorial_TranscodeVideo)
 ![image](https://user-images.githubusercontent.com/79297534/110717138-d5705900-824b-11eb-8de8-86f55ef90245.png)
 
 ![image](https://user-images.githubusercontent.com/79297534/110717176-e620cf00-824b-11eb-9725-8ca2c9a956f1.png)
@@ -55,7 +58,12 @@
 
 ![image](https://user-images.githubusercontent.com/79297534/110718584-95f73c00-824e-11eb-93ca-96daf9312531.png)
 
-- https://aws.amazon.com/ko/getting-started/hands-on/process-video-jobs-with-aws-batch-on-aws-step-functions/ 해당 사이트 참조하여 JSON 작성 REGION에 현재 작업중 리전(소문자!!), 112233445566를 현재 계정 번호로 대체 해줘야함 (총 20개 변경 필요) 
+- https://aws.amazon.com/ko/getting-started/hands-on/process-video-jobs-with-aws-batch-on-aws-step-functions/ 해당 사이트 참조하여 JSON 작성 
+- REGION에 현재 작업중인 리전으로 변경(소문자!!)
+- 112233445566를 현재 계정 번호로 변경 (총 20군데 변경 필요) 
+- Json 내용중 StepsBatchTutorial_ExtractFeatures -> StepsBatchTutorial_FindFeatures 변경필요
+
+
 ![image](https://user-images.githubusercontent.com/79297534/110718604-a4ddee80-824e-11eb-8f2d-d85c462dce27.png)
 
 ![image](https://user-images.githubusercontent.com/79297534/110718818-0bfba300-824f-11eb-8570-be6ff157da12.png)
@@ -243,3 +251,4 @@ https://docs.aws.amazon.com/ko_kr/codepipeline/latest/userguide/samples/SampleAp
 - https://docs.aws.amazon.com/codepipeline/latest/userguide/tutorials-simple-s3.html#s3-create-s3-bucket
 - https://docs.aws.amazon.com/codedeploy/latest/userguide/getting-started-create-service-role.html
 - https://docs.aws.amazon.com/codepipeline/latest/userguide/tutorials-simple-codecommit.html
+- https://aws.amazon.com/ko/getting-started/hands-on/process-video-jobs-with-aws-batch-on-aws-step-functions/
